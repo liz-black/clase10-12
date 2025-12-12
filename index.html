@@ -3,86 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <title>Grupo</title>
+
     <style>
         body {
             font-family: Verdana, sans-serif;
-            background-color: #f5f5f5;
             margin: 0;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
+
+            /* Fondo nuevo y grande */
+            background-image: url('https://cdn.uprit.edu.pe/images/1757538931516-los-arquetipos.jpg');
+            background-size: cover;         /* Se ajusta a toda la pantalla */
+            background-repeat: no-repeat;
+            background-position: center;    /* Centrado */
+            background-attachment: fixed;   /* Fondo fijo */
+        }
+
+        .card {
+            background: #ffffffcc; /* Blanco semitransparente para que se vea el fondo */
+            width: 70%;
+            margin: 60px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
         }
 
         img {
-            width: 180px;
-            margin-bottom: 20px;
+            width: 150px;
+            margin-bottom: 15px;
         }
 
         h1 {
-            color: #333;
-            font-size: 28px;
-            text-transform: uppercase;
+            color: #2e4a62;
+            font-size: 30px;
+            margin-bottom: 5px;
+            letter-spacing: 2px;
         }
 
         h2 {
-            color: #444;
+            color: #3a5c74;
             font-size: 22px;
-            margin-top: 30px;
+            margin-top: 35px;
+            border-bottom: 2px solid #c9d6df;
+            display: inline-block;
+            padding-bottom: 5px;
         }
 
-        .lista {
+        .lista, .dato {
             font-size: 18px;
             line-height: 1.8;
-            color: #000;
+            color: #333;
         }
 
-        .dato {
-            font-size: 18px;
-            margin: 10px 0;
+        .dato strong {
+            color: #2e4a62;
         }
 
         hr {
             margin: 30px auto;
             width: 60%;
+            border: 0;
+            border-top: 2px solid #d4d4d4;
         }
 
         a {
-            color: #0055aa;
+            color: #1e73be;
             text-decoration: none;
             font-weight: bold;
+            font-size: 18px;
         }
 
         a:hover {
+            color: #104a8e;
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <img src="uprit.png" alt="Logo">
+    <div class="card">
+        <img src="uprit.png" alt="Logo">
 
         <h1>GRUPO</h1>
 
-    <h2>Integrantes</h2>
-    <div class="lista">
-        Alejo Farfán Pierina Lizbeth<br>
-        Arca Rubio Mixi<br>
-        Arca Rubio Yazzmine<br>
-        Mamani Tonconi Jose<br>
-        Sanchez Cajavilca Lizbeth
-    </div>
+        <h2>Integrantes</h2>
+        <div class="lista">
+            Alejo Farfán Pierina Lizbeth<br>
+            Arca Rubio Mixi<br>
+            Arca Rubio Yazzmine<br>
+            Mamani Tonconi Jose<br>
+            Sanchez Cajavilca Lizbeth
+        </div>
 
-    <hr>
-    <div class="dato"><strong>Curso:</strong> Desarrollo de Entornos Web</div>
-    <div class="dato"><strong>Docente:</strong> Díaz Pulido José Arturo</div>
-    <div class="dato"><strong>Ciclo:</strong> VI - 2025</div>
+        <hr>
 
-    <h2>Ejercicios</h2>
-    <div class="lista">
-        <a href="ejercicio1/index.html">Ejercicio 1</a><br>
-        <a href="ejercicio2/index.html">Ejercicio 2</a><br>
-        <a href="ejercicio3/index.html">Ejercicio 3</a>
+        <div class="dato"><strong>Curso:</strong> Desarrollo de Entornos Web</div>
+        <div class="dato"><strong>Docente:</strong> Díaz Pulido José Arturo</div>
+        <div class="dato"><strong>Ciclo:</strong> VI - 2025</div>
+
+        <h2>Ejercicios</h2>
+        <div class="lista">
+            <a href="ejercicio1/index.html">Ejercicio 1</a><br>
+            <a href="ejercicio2/index.html">Ejercicio 2</a><br>
+            <a href="ejercicio3/index.html">Ejercicio 3</a><br>
+        </div>
     </div>
 
 </body>
 </html>
-
