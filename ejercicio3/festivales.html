@@ -8,14 +8,107 @@
         body {
             background-color: #d9f1ff;
             font-family: Verdana, sans-serif;
+            color: #003c55;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #004c70;
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        table {
+            width: 90%;
+            max-width: 900px;
+            margin: 25px auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        th {
+            background-color: #70c7ff;
+            color: #003c55;
+            padding: 15px;
+            font-size: 20px;
+        }
+
+        td {
+            padding: 15px;
+            font-size: 17px;
+            vertical-align: top;
+        }
+
+        img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.04);
+        }
+
+        .descripcion {
+            text-align: left;
         }
     </style>
 </head>
 <body>
 
 <h1>🎉 Festivales</h1>
-<p>Los festivales culturales celebran música, danza, gastronomía y tradiciones locales.</p>
-<p>Son una forma de unir a la comunidad y compartir expresiones artísticas con visitantes.</p>
+
+<p>
+    Los festivales culturales celebran música, danza, arte y gastronomía que destacan la riqueza 
+    de cada región. Son espacios donde las comunidades comparten tradición, alegría y convivencia.
+</p>
+
+<p>
+    A continuación podrás ver dos festivales populares del mundo, junto a sus imágenes y una breve descripción.
+</p>
+
+<!-- TABLA CON IMÁGENES Y DESCRIPCIONES -->
+<table>
+    <tr>
+        <th>Imagen</th>
+        <th>Descripción</th>
+    </tr>
+
+    <tr>
+        <td>
+            <img src="https://uvn-brightspot.s3.amazonaws.com/assets/vixes/imj/nuestrorumbo/l/los-festivales-mas-populares-del-mundo-2.jpg" alt="Festival India">
+        </td>
+        <td class="descripcion">
+            <strong>Festival de Colores – India</strong><br><br>
+            Conocido como <em>Holi</em>, este festival llena las calles de polvos de colores, música y baile.
+            Celebra la llegada de la primavera y simboliza alegría, amor, renovación y unión entre las personas.
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <img src="https://nyc3.digitaloceanspaces.com/volemos/blog/wp-content/uploads/2022/06/festivales-ma%CC%81s-populares-del-mundo.jpeg" alt="Festival de música">
+        </td>
+        <td class="descripcion">
+            <strong>Festival de Música – Varios países</strong><br><br>
+            Grandes eventos que reúnen a miles de personas para disfrutar conciertos, luces y espectáculos en vivo.
+            Son espacios donde se celebra la creatividad, la cultura y la diversidad musical.
+        </td>
+    </tr>
+</table>
 
 </body>
 </html>
