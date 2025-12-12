@@ -3,62 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal Turístico</title>
+    <title>Portal Cultural</title>
+
+    <!-- Fuente moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #e8ebf2;
+        }
+
+        /* TABLA PRINCIPAL */
+        table {
+            width: 100%;
+            height: 100vh;
+            border-collapse: collapse;
+        }
+
+        /* MENÚ LATERAL */
+        .menu {
+            background-color: #2f3b52;
+            color: white;
+            width: 260px;
+            padding: 20px;
+            box-shadow: 2px 0 12px rgba(0,0,0,0.25);
+        }
+
+        .menu h2 {
+            text-align: center;
+            margin-top: 0;
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+
+        .menu hr {
+            border: none;
+            height: 2px;
+            background: #ffffff55;
+            margin: 18px 0;
+        }
+
+        /* ENLACES DEL MENÚ */
+        .menu a {
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            padding: 12px 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            transition: 0.3s;
+            font-weight: 500;
+        }
+
+        /* Colores originales */
+        .historia { color:#F4D03F; }
+        .museos { color:#5DADE2; }
+        .festivales { color:#F1948A; }
+        .artesania { color:#58D68D; }
+
+        /* Hover elegante */
+        .menu a:hover {
+            background-color: #43506a;
+            transform: translateX(6px);
+        }
+
+        /* Botón volver */
+        .btn-volver {
+            background: #ffffff22;
+            color: white !important;
+            text-align: center;
+            margin-top: 25px;
+            padding: 10px 15px;
+            border-radius: 8px;
+            display: block;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .btn-volver:hover {
+            background: #ffffff44;
+            transform: scale(1.05);
+        }
+
+        /* CONTENIDO DERECHA */
+        .contenido {
+            background-color: #f5f5f5;
+            padding: 0;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+    </style>
 </head>
 <body>
 
-<table width="100%" border="1" cellpadding="20" cellspacing="0">
+<table>
     <tr>
 
-        <!-- MENÚ LATERAL -->
-        <td width="220" valign="top" bgcolor="#006994">
-            <h2 style="color:white; text-align:center;">🌎 Turismo</h2>
+        <!-- MENÚ IZQUIERDO -->
+        <td class="menu" valign="top">
+
+            <h2>PORTAL CULTURAL</h2>
             <hr>
 
-            <!-- COLORES PERSONALIZADOS EN CADA ENLACE -->
-            <p>
-                <a href="playas.html" target="contenido"
-                   style="color:#FFEB3B; text-decoration:none; font-size:18px;">
-                   🏖️ Playas
-                </a>
-            </p>
+            <a href="historia.html" target="contenido" class="historia">📜 Historia</a>
+            <a href="museos.html" target="contenido" class="museos">🏛️ Museos</a>
+            <a href="festivales.html" target="contenido" class="festivales">🎉 Festivales</a>
+            <a href="artesania.html" target="contenido" class="artesania">🧶 Artesanía</a>
 
-            <p>
-                <a href="rutas.html" target="contenido"
-                   style="color:#00FFB3; text-decoration:none; font-size:18px;">
-                   🚗 Rutas Turísticas
-                </a>
-            </p>
+            <hr>
 
-            <p>
-                <a href="hoteles.html" target="contenido"
-                   style="color:#FFC1E3; text-decoration:none; font-size:18px;">
-                   🏨 Hoteles
-                </a>
-            </p>
-
-            <p>
-                <a href="gastronomia.html" target="contenido"
-                   style="color:#FF7043; text-decoration:none; font-size:18px;">
-                   🍽️ Gastronomía
-                </a>
-            </p>
-            <!-- 🔙 BOTÓN PARA REGRESAR AL INICIO -->
-            <p>
-                <a href="../index.html"
-                style="display:inline-block; background:#ffffff22; color:white; 
-                       padding:8px 12px; text-decoration:none; border-radius:6px; 
-                       font-size:16px;">
-                    ⬅️ Regresar al Inicio
-                </a>
-            </p>
+            <a href="../index.html" class="btn-volver">⬅️ Regresar al Inicio</a>
 
         </td>
 
-        <!-- ZONA DE CONTENIDO -->
-        <td valign="top" bgcolor="#f5f5f5">
-            <iframe name="contenido" src="playas.html"
-                    width="100%" height="800" frameborder="0"></iframe>
+        <!-- CONTENIDO -->
+        <td class="contenido">
+            <iframe name="contenido" src="historia.html"></iframe>
         </td>
 
     </tr>
