@@ -4,42 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal Escolar</title>
+
+    <!-- Fuente moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #e9edf3;
+        }
+
+        /* TABLA PRINCIPAL */
+        table {
+            width: 100%;
+            height: 100vh;
+            border-collapse: collapse;
+        }
+
+        /* MENÚ IZQUIERDO */
+        .menu {
+            background-color: #2d3748;
+            color: white;
+            width: 240px;
+            box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+        }
+
+        .menu h2 {
+            text-align: center;
+            padding-top: 15px;
+            font-size: 22px;
+            letter-spacing: 1px;
+        }
+
+        .menu hr {
+            border: none;
+            border-top: 1px solid #4a5568;
+            margin: 15px 10px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin: 8px 10px;
+            transition: 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: #4a5568;
+            transform: translateX(5px);
+        }
+
+        /* BOTÓN VOLVER */
+        .btn-volver {
+            background: #38a169;
+            color: white !important;
+            padding: 10px 15px;
+            border-radius: 8px;
+            text-align: center;
+            display: block;
+            margin: 25px auto;
+            width: 150px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn-volver:hover {
+            background: #2f855a;
+            transform: scale(1.05);
+        }
+
+        /* CONTENIDO DERECHA */
+        .contenido {
+            background-color: #f5f5f5;
+        }
+
+        iframe {
+            border: none;
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
 </head>
 <body>
 
-<table width="100%" border="1" cellpadding="20" cellspacing="0">
+<table>
     <tr>
 
-        <!-- COLUMNA IZQUIERDA: MENÚ -->
-        <td width="220" valign="top" bgcolor="#2d3748">
-            <h2 style="color: white; text-align: center;">PORTAL ESCOLAR</h2>
+        <!-- MENÚ IZQUIERDO -->
+        <td class="menu" valign="top">
+
+            <h2>PORTAL ESCOLAR</h2>
             <hr>
 
-            <p><a href="inicio.html" target="contenido" style="color:white; text-decoration:none; font-size:18px;">🏠 Inicio</a></p>
-
-            <p><a href="cursos.html" target="contenido" style="color:white; text-decoration:none; font-size:18px;">📚 Cursos</a></p>
-
-            <p><a href="noticias.html" target="contenido" style="color:white; text-decoration:none; font-size:18px;">📰 Noticias</a></p>
-
-            <p><a href="contacto.html" target="contenido" style="color:white; text-decoration:none; font-size:18px;">✉️ Contacto</a></p>
+            <a href="inicio.html" target="contenido">🏠 Inicio</a>
+            <a href="cursos.html" target="contenido">📚 Cursos</a>
+            <a href="noticias.html" target="contenido">📰 Noticias</a>
+            <a href="contacto.html" target="contenido">✉️ Contacto</a>
 
             <hr>
 
-            <!-- 🔙 BOTÓN PARA REGRESAR AL INDEX PRINCIPAL -->
-            <p style="text-align:center; margin-top:20px;">
-                <a href="../index.html"
-                   style="background:#4CAF50; color:white; padding:10px 15px; 
-                          border-radius:8px; text-decoration:none; font-size:16px;
-                          display:inline-block;">
-                    🔙 Volver al inicio
-                </a>
-            </p>
+            <a href="../index.html" class="btn-volver">🔙 Volver</a>
 
         </td>
 
-        <!-- COLUMNA DERECHA: CONTENIDO -->
-        <td valign="top" bgcolor="#f5f5f5">
-            <iframe name="contenido" src="inicio.html" width="100%" height="800" frameborder="0"></iframe>
+        <!-- CONTENIDO DERECHA -->
+        <td class="contenido">
+            <iframe name="contenido" src="inicio.html"></iframe>
         </td>
 
     </tr>
